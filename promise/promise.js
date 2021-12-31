@@ -3,8 +3,12 @@ const search = async () =>{
     try{
         fetch(API_URL)
             .then (response => response.json())
-            .then (data => console.log(data.meals[0].strMeal));       
-    }
+            .then (({meals}) => {
+                meals.forEach(meal => {
+                    console.log(meal.strMeal)
+                });
+    })
+}
     catch(error){
         console.log(error);
     }
