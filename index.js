@@ -1,4 +1,4 @@
-import {searchByLetter} from './promise/promise.js';
+import {searchByLetter} from './promises/letter';
 
 const b = document.getElementById("b");
 b.onclick = () =>{
