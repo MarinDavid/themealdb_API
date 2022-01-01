@@ -5,9 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comidas</title>
-    <script src="./promise/promise.js"></script>
+    <script src="./index.js" type="module"></script>
 </head>
 <body>
-    <button id="b" onclick="search()">Pulsa</button>
+    <main>
+        <form action="">
+            <label for="letter">
+                <span>Introduce una letra para encontrar los platos que empiezan por esa letra</span>
+                <input type="text" id="letter" placeholder="a">
+                <input type="button" value="Buscar" id="b">
+                </label>
+        </form>
+    </main>
 </body>
 </html>
