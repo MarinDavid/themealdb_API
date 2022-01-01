@@ -6,16 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comidas</title>
     <script src="./index.js" type="module"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <form action="">
-            <label for="letter">
-                <span>Introduce una letra para encontrar los platos que empiezan por esa letra</span>
-                <input type="text" id="letter" placeholder="a">
-                <input type="button" value="Buscar" id="b">
-                </label>
+    <header>
+        <form action="" class="form">
+            <label for="letter" class="form-label">
+                <span class="form-label__span">Introduce una letra para encontrar los platos que empiezan por esa letra</span>
+                <input class="form-label__text" type="text" id="letter" placeholder="a b c d e f ......">
+                <input class="form-label__button" type="button" value="Buscar" id="b">
+            </label>
         </form>
+    </header>
+    <main id="main">
+        
     </main>
 </body>
 </html>
