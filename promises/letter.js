@@ -14,6 +14,9 @@ const searchByLetter = () =>{
                 meals.forEach( (meal) => {
                     let element = document.createElement('li');
                     element.appendChild(document.createTextNode(`${meal.strMeal}`));
+                    let description = document.createElement('p');
+                    description.appendChild(document.createTextNode(`${meal.strInstructions}`))
+                    element.appendChild(description);
                     ul.appendChild(element)
                     // console.log(meal.strMeal);
                     // const tpl = meals.map ((meal) => `<li>${meal.strMeal}</li>`);

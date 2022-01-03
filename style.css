@@ -48,4 +48,10 @@ main li{
     text-align: center;
     padding: 1rem 0;
     font-size: 1.2rem;
+    font-weight: bold;
+}
+main p{
+    margin: 1rem 1.2rem 0 1.2rem;
+    text-align: justify;
+    font-weight: normal;
 }
