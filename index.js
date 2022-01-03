@@ -5,4 +5,8 @@ b.onclick = () =>{
     searchByLetter();
 };
 
+const l = document.getElementById("l");
+l.addEventListener("click", function(){
+    document.getElementById("main").innerHTML=" ";
+})
 

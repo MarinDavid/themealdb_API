@@ -35,7 +35,11 @@ header{
     text-align: center;
 }
 .form-label__button{
-    width: 40%;
+    width: 20%;
+    margin-right: 1rem;
+}
+.form-label__button2{
+    width: 20%;
 }
 main{
     background-color: #ffe2ac;
@@ -44,4 +48,10 @@ main li{
     text-align: center;
     padding: 1rem 0;
     font-size: 1.2rem;
+    font-weight: bold;
+}
+main p{
+    margin: 1rem 1.2rem 0 1.2rem;
+    text-align: justify;
+    font-weight: normal;
 }
