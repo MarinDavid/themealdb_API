@@ -13,8 +13,15 @@ const searchByLetter = () =>{
             .then (({meals}) => {
                 meals.forEach( (meal) => {
                     let element = document.createElement('li');
-                    element.appendChild(document.createTextNode(`${meal.strMeal}`));
+                    let img = document.createElement('img');
+                    img.src = `${meal.strMealThumb}`;
+                    element.appendChild(img);
+                    let title = document.createElement('p');
+                    title.classList.add("title");
+                    title.appendChild(document.createTextNode(`${meal.strMeal}`));
+                    element.appendChild(title);
                     let description = document.createElement('p');
+                    description.classList.add("description")
                     description.appendChild(document.createTextNode(`${meal.strInstructions}`))
                     element.appendChild(description);
                     ul.appendChild(element)

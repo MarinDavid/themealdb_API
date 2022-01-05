@@ -50,7 +50,14 @@ main li{
     font-size: 1.2rem;
     font-weight: bold;
 }
-main p{
+main img{
+    width: 40%;
+    height: 40%;
+}
+.title{
+    font-weight: bold;
+}
+.description{
     margin: 1rem 1.2rem 0 1.2rem;
     text-align: justify;
     font-weight: normal;
