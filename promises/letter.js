@@ -6,7 +6,6 @@ const searchByLetter = () =>{
     const main = document.getElementById("main");
     const ul = document.createElement('ul');
 
-
     try{
         fetch(API_URL)
             .then (response => response.json())
