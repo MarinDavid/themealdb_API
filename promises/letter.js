@@ -20,9 +20,14 @@ const searchByLetter = () =>{
                     title.appendChild(document.createTextNode(`${meal.strMeal}`));
                     element.appendChild(title);
                     let description = document.createElement('p');
-                    description.classList.add("description")
+                    description.classList.add("description");
                     description.appendChild(document.createTextNode(`${meal.strInstructions}`))
                     element.appendChild(description);
+                    let link = document.createElement('a');
+                    link.classList.add("link");
+                    link.href = `${meal.strYoutube}`;
+                    link.innerHTML = "Tutorial";
+                    element.appendChild(link)
                     ul.appendChild(element)
                     // console.log(meal.strMeal);
                     // const tpl = meals.map ((meal) => `<li>${meal.strMeal}</li>`);
